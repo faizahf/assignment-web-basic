@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    font-family: 'JetBrains Mono';
+}
+
+body {
+    background-color: #F7F7F7 !important;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px 50px !important;
+}
