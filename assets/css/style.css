@@ -68,6 +68,10 @@ svg {
     color: blue !important;
 }
 
+.shape {
+    clip-path: polygon(0% 0%, 99% 0%, 100% 0, 100% 85%, 65% 100%, 35% 100%, 0 85%);
+}
+
 /* about us */
 .accordion-button {
     background-color: #B9B9B9 !important;

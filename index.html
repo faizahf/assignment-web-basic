@@ -14,11 +14,11 @@
 </head>
 <body>
     <main class="w-100">
-        <div class="d-flex row-cols-2 gap-2">
-            <div class="m-auto w-25 pb-2">
-                <h3 class="fw-semibold my-4">Register</h3>
-                <h6 class="text-secondary fw-semibold my-4">Create your account for free</h6>
-                <form class="pb-2 border-bottom border-secondary" action="/pages/login.html">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col m-auto pb-2">
+                <h3 class="fw-semibold my-4 w-50 mx-auto">Register</h3>
+                <h6 class="text-secondary fw-semibold my-4 w-50 mx-auto">Create your account for free</h6>
+                <form class="pb-2 border-bottom border-secondary w-50 mx-auto" action="/pages/login.html">
                     <div class="my-4">
                         <label for="name" class="form-label">Full name</label>
                         <input type="text" class="form-control" id="name" placeholder="Input your full name" required>
@@ -33,10 +33,14 @@
                     </div>
                     <button type="submit" class="btn btn-primary w-100 mt-4">Create new account</button>
                 </form>
-                <button type="button" class="btn btn-outline-light w-100 mt-2 text-dark border-secondary">Register with Google</button>
-                <p class="text-center mt-4 text-secondary fw-medium">Have an account? <a href="/pages/login.html" class="text-decoration-none">Log in</a></p>
+                <div class="w-50 mx-auto">
+                    <button type="button" class="btn btn-outline-light w-100 mt-2 text-dark border-secondary">
+                        <img src="/assets/img/google.svg" class="mx-2" style="width: 15px;">Register with Google
+                    </button>
+                    <p class="text-center mt-4 text-secondary fw-medium">Have an account? <a href="/pages/login.html" class="text-decoration-none">Log in</a></p>
+                </div>
             </div>
-            <div>
+            <div class="col">
                 <img src="/assets/img/signup.png" class="w-100" style="height: 100vh;">
             </div>
         </div>
