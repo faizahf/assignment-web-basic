@@ -16,7 +16,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white height-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
     <div class="container">
       <a class="navbar-brand" href="home.html">DUMMY</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -74,9 +74,9 @@
       Read more
     </button>
 
-    <div class="d-flex gap-3 my-5 text-body-secondary pb-5 border-bottom">
-      <img src="/assets/img/section-image-1.png" alt="awesome-team" />
-      <div>
+    <div class="row gap-3 my-5 text-body-secondary pb-5 border-bottom">
+      <img src="/assets/img/section-image-1.png" alt="awesome-team" class="col"/>
+      <div class="col">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Pellentesque nec dignissim ligula, ultrices porta mauris. Lorem
@@ -99,137 +99,140 @@
     </div>
   </section>
 
-  <section class="container d-flex row-cols-3 gap-5 my-5">
-    <!-- why choose us -->
-    <div class="flex-fill">
-      <h4 class="fw-bold">Why Choose Us?</h4>
-      <p>
-        Proin posuere vitae sem vitae pharetra. Nunc vel porttitor justo, sit
-        amet luctus tortor. Suspendisse a commodo sapien, sed aliquam elit.
-        Suspendisse lorem sapien, commodo dignissim lorem sed, blandit bibendum
-        metus.
-      </p>
-      <p>
-        Proin posuere vitae sem vitae pharetra. Nunc vel porttitor justo, sit
-        amet luctus tortor.
-      </p>
+  <section class="container gap-5 my-5 border-bottom">
+    <div class="row row-cols-1 row-cols-lg-3 row-gap-4">
+      <!-- why choose us -->
+      <div class="col">
+        <h4 class="fw-bold">Why Choose Us?</h4>
+        <p>
+          Proin posuere vitae sem vitae pharetra. Nunc vel porttitor justo, sit
+          amet luctus tortor. Suspendisse a commodo sapien, sed aliquam elit.
+          Suspendisse lorem sapien, commodo dignissim lorem sed, blandit bibendum
+          metus.
+        </p>
+        <p>
+          Proin posuere vitae sem vitae pharetra. Nunc vel porttitor justo, sit
+          amet luctus tortor.
+        </p>
+      </div>
+      <!-- our solution-->
+      <div class="col mb-5">
+        <h4 class="fw-bold">Our Solution</h4>
+        <div class="accordion" id="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Heading Text Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Heading Text Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Heading Text Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Heading Text Item #4
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+  
+  
+        </div>
+      </div>
+      <!-- our expertise -->
+      <div class="col mb-5">
+        <h4 class="fw-bold">Our Expertise</h4>
+        <div class="mb-3">
+          <h6 class="fw-bold mb-3">Web Development</h6>
+          <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-red" style="width: 50%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <h6 class="fw-bold mb-3">Designing</h6>
+          <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-green" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <h6 class="fw-bold mb-3">User Experience</h6>
+          <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-light-blue" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <h6 class="fw-bold mb-3">Development</h6>
+          <div class="progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-blue" style="width: 30%"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- our solution-->
-    <div class="flex-fill">
-      <h4 class="fw-bold">Our Solution</h4>
-      <div class="accordion" id="accordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Heading Text Item #1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
 
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Heading Text Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Heading Text Item #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Heading Text Item #4
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-    <!-- our expertise -->
-    <div class="flex-fill">
-      <h4 class="fw-bold">Our Expertise</h4>
-      <div class="mb-3">
-        <h6 class="fw-bold mb-3">Web Development</h6>
-        <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar bg-red" style="width: 50%"></div>
-        </div>
-      </div>
-      <div class="mb-3">
-        <h6 class="fw-bold mb-3">Designing</h6>
-        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar bg-green" style="width: 75%"></div>
-        </div>
-      </div>
-      <div class="mb-3">
-        <h6 class="fw-bold mb-3">User Experience</h6>
-        <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar bg-light-blue" style="width: 80%"></div>
-        </div>
-      </div>
-      <div class="mb-3">
-        <h6 class="fw-bold mb-3">Development</h6>
-        <div class="progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar bg-blue" style="width: 30%"></div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- our team -->
   <section class="container my-5">
     <h4 class="fw-bold">Our Team</h4>
-    <div class="d-flex gap-5 my-5">
-      <div class="card border-0">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-gap-4 my-5">
+      <div class="col card border-0">
         <img src="/assets/img/avatar-person.jpeg" class="card-img-top" alt="avatar-person">
         <div class="card-body text-center bg-light">
           <h5 class="card-title fw-bold">John Doe</h5>
@@ -237,7 +240,7 @@
         </div>
       </div>
 
-      <div class="card border-0">
+      <div class="col card border-0">
         <img src="/assets/img/avatar-person.jpeg" class="card-img-top" alt="avatar-person">
         <div class="card-body text-center bg-light">
           <h5 class="card-title fw-bold">Jenn Doe</h5>
@@ -245,7 +248,7 @@
         </div>
       </div>
 
-      <div class="card border-0">
+      <div class="col card border-0">
         <img src="/assets/img/avatar-person.jpeg" class="card-img-top" alt="avatar-person">
         <div class="card-body text-center bg-light">
           <h5 class="card-title fw-bold">Superman</h5>
@@ -253,7 +256,7 @@
         </div>
       </div>
 
-      <div class="card border-0">
+      <div class="col card border-0">
         <img src="/assets/img/avatar-person.jpeg" class="card-img-top" alt="avatar-person">
         <div class="card-body text-center bg-light">
           <h5 class="card-title fw-bold">Mah Doe</h5>
@@ -263,74 +266,74 @@
     </div>
   </section>
 
-  <!-- footer -->
-  <footer class="bg-blue">
-    <div class="container py-5 text-white">
+    <!-- footer -->
+    <footer class="bg-blue">
+      <div class="container py-5 text-white">
 
-      <div class="row">
-        <div class="col mb-3">
-          <h5 class="fw-semibold">Our Contact</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Dummy Digitalent</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Dummy Tower</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pin-21452 Indonesia
-                ID.</a></li><br>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">(123) 456-789 - 1255 -
-                12584</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">email@domainname.com</a>
-            </li>
-          </ul>
-        </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-gap-4">
+              <div class="col mb-3">
+                  <h5 class="fw-semibold">Our Contact</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Dummy Digitalent</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Dummy Tower</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pin-21452 Indonesia
+                              ID.</a></li><br>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">(123) 456-789 - 1255 -
+                              12584</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">email@domainname.com</a>
+                      </li>
+                  </ul>
+              </div>
 
-        <div class="col mb-3">
-          <h5 class="fw-semibold">Quick Links</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Latest Events</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms and conditions</a>
-            </li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy policy</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Career</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact us</a></li>
-          </ul>
-        </div>
+              <div class="col mb-3">
+                  <h5 class="fw-semibold">Quick Links</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Latest Events</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms and conditions</a>
+                      </li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy policy</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Career</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact us</a></li>
+                  </ul>
+              </div>
 
-        <div class="col mb-3">
-          <h5 class="fw-semibold">Latest posts</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pellentesque et pulvinar
-                enim. Quisque at temor ligula</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Natus error sit voluptatem
-                accusantium doloremque</a></li>
-          </ul>
-        </div>
+              <div class="col mb-3">
+                  <h5 class="fw-semibold">Latest posts</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Lorem ipsum dolor sit
+                              amet, consectetur adipiscing elit.</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pellentesque et pulvinar
+                              enim. Quisque at temor ligula</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Natus error sit voluptatem
+                              accusantium doloremque</a></li>
+                  </ul>
+              </div>
 
-        <div class="col mb-3">
-          <h5 class="fw-semibold">Recent News</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pellentesque et pulvinar
-                enim. Quisque at temor ligula</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Natus error sit voluptatem
-                accusantium doloremque</a></li>
-          </ul>
-        </div>
+              <div class="col mb-3">
+                  <h5 class="fw-semibold">Recent News</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Lorem ipsum dolor sit
+                              amet, consectetur adipiscing elit.</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pellentesque et pulvinar
+                              enim. Quisque at temor ligula</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Natus error sit voluptatem
+                              accusantium doloremque</a></li>
+                  </ul>
+              </div>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-5">
-          <p>&copy; DUMMY Digitalent Site All right reserved. Template By example</p>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-5">
+                <p>&copy; DUMMY Digitalent Site All right reserved. Template By example</p>
 
-          <ul class="list-unstyled d-flex gap-4">
-            <div><i class="fa-brands fa-facebook-f"></i></div>
-            <div><i class="fa-brands fa-twitter"></i></i></div>
-            <div><i class="fa-brands fa-linkedin-in"></i></div>
-            <div><i class="fa-brands fa-pinterest"></i></div>
-            <div><i class="fa-brands fa-google-plus-g"></i></div>
-          </ul>
-        </div>
+                <ul class="list-unstyled d-flex gap-4">
+                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></i></div>
+                    <div><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div><i class="fa-brands fa-pinterest"></i></div>
+                    <div><i class="fa-brands fa-google-plus-g"></i></div>
+                </ul>
+            </div>
       </div>
-    </div>
   </footer>
 </body>
 
